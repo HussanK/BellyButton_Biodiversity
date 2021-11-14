@@ -69,7 +69,7 @@ function init() {
       // 6. Create variables that hold the otu_ids, otu_labels, and sample_values.
       var sampleOTU_array = samples[0];
       var sampleOTU_ids = sampleOTU_array.otu_ids;
-      //console.log(sampleOTU_ids);
+      console.log(sampleOTU_ids);
       var sampleOTU_labels = sampleOTU_array.otu_labels;
       //console.log(sampleOTU_labels);
       var sampleSample_values = sampleOTU_array.sample_values;
@@ -88,11 +88,6 @@ function init() {
       
   
       var yticks = OTU_ids_Ten.map(num => "OTU" + num).reverse();
-      console.log(yticks);
-      console.log(sampleValues_Ten);
-      console.log(OTULabels_Ten);
-      //sampleValues_Ten.map(num => parseInt(num))
-      //console.log(yticks);
       // 8. Create the trace for the bar chart. 
   
       var trace = {
@@ -116,7 +111,7 @@ function init() {
       Plotly.newPlot('bar', [trace], barLayout);
       
   
-      // ----- challenge part 2 ------//
+      // ----- 2 ------//
       // 1. Create the trace for the bubble chart.
       var  trace2 ={
         x: sampleOTU_ids,
@@ -150,7 +145,7 @@ function init() {
       Plotly.newPlot('bubble', bubbleData, bubbleLayout);
   
   
-      // --------- Challenge Part 3 -------- //
+      // --------- 3 -------- //
       // D3: 1-3. Use Plotly to plot the data with the layout.
       var metaData_All = sampledata.metadata
       //console.log(metaData_All)
