@@ -107,7 +107,7 @@ function init() {
   
       // 10. Use Plotly to plot the data with the layout. 
       Plotly.newPlot('bar', [trace], barLayout);
-      
+      console.log(sampleOTU_ids);
   
       // ----- 2 ------//
       // 1. Create the trace for the bubble chart.
@@ -153,7 +153,6 @@ function init() {
       // convert wash freq to floating point number
       sampleMetaData = SampleMetaData[0];
       wfreq = parseFloat(sampleMetaData.wfreq);
-      console.log(wfreq);
   
       // 4. Create the trace for the gauge chart.
       var gaugeData = [
