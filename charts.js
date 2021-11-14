@@ -107,7 +107,6 @@ function init() {
   
       // 10. Use Plotly to plot the data with the layout. 
       Plotly.newPlot('bar', [trace], barLayout);
-      console.log(sampleOTU_ids);
   
       // ----- 2 ------//
       // 1. Create the trace for the bubble chart.
@@ -121,8 +120,8 @@ function init() {
         mode: 'markers',
         marker:{
           size: sampleSample_values,
-          color: sampleOTU_ids,
-        }
+          color: sampleOTU_ids
+              }
       };
       var bubbleData = [trace2];
   
