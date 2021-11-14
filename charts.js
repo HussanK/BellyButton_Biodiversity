@@ -69,7 +69,6 @@ function init() {
       // 6. Create variables that hold the otu_ids, otu_labels, and sample_values.
       var sampleOTU_array = samples[0];
       var sampleOTU_ids = sampleOTU_array.otu_ids;
-      console.log(sampleOTU_ids);
       var sampleOTU_labels = sampleOTU_array.otu_labels;
       //console.log(sampleOTU_labels);
       var sampleSample_values = sampleOTU_array.sample_values;
@@ -81,7 +80,6 @@ function init() {
       var bacteriaAll = samples.sort((a ,b) => a.sample_values - b.sample_values).reverse();
       //console.log(bacteriaAll);
       var allBacteria = bacteriaAll[0];
-      console.log(allBacteria)
       var OTU_ids_Ten = allBacteria.otu_ids.slice(0,10);
       var OTULabels_Ten = allBacteria.otu_labels.slice(0,10).reverse();
       var sampleValues_Ten = allBacteria.sample_values.slice(0, 10).reverse();
